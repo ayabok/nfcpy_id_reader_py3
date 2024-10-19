@@ -4,7 +4,7 @@ Read the card ID (Mifare: UID, FeliCa: IDm) with [nfcpy](https://github.com/nfcp
 
 ## Requirement
 ### Python version
-  - v2.7.x
+  - v3.x
 
 ### Operation System
   - Raspbian
