@@ -33,7 +33,7 @@ def on_connect(tag):
     identifier = binascii.hexlify(tag.identifier)
     match = re.findall(r'[0-9]', tag.type)
     type = int(match[0] if match else 0)
-    stdout_json({'event':'touchstart', 'id':identifier, 'type':type})
+    stdout_json({'event':'touchstart', 'id':identifier.decode(), 'type':type})
     return not(non_touchend)
 
 if __name__ == '__main__':
